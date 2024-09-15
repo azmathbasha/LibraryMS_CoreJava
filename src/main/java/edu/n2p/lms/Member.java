@@ -18,6 +18,10 @@ public class Member {
         return "Member ID: " + memberId + ", Name: " + name;
     }
 
+    public String getName() {
+        return name;
+    }
+    
     public void issueBook(Book book) {
         if (!book.isIssued()) {
             book.issueBook();
