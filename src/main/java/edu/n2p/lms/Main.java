@@ -2,8 +2,8 @@ package edu.n2p.lms;
 
 public class Main {
     public static void main(String[] args) {
-        // Create Library instance
-        Library library = new Library();
+        // Create Library instance.  Its a singleton, since there can be only one Library object
+        Library library = Library.getInstance();
 
         // Create Books
         Book book1 = new Book("1", "Clean Code", "Robert C. Martin");

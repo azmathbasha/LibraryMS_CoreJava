@@ -7,7 +7,22 @@ public class Library {
     private List<Book> books;
     private List<Member> members;
 
-    public Library() {
+    private static Library single_instance = null;
+ 
+    // Static method
+    // Static method to create instance of Library class if there is no existing object
+    public static Library getInstance()
+    {
+        if (single_instance == null)
+            single_instance = new Library();
+ 
+        return single_instance;
+    }
+
+    // Constructor
+    // Here we will be creating private constructor
+    // restricted to this class itself
+    private Library() {
         books = new ArrayList<>();
         members = new ArrayList<>();
     }
