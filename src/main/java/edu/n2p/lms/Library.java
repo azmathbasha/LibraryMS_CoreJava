@@ -9,7 +9,6 @@ public class Library {
 
     private static Library single_instance = null;
  
-    // Static method
     // Static method to create instance of Library class if there is no existing object
     public static Library getInstance()
     {
@@ -19,7 +18,6 @@ public class Library {
         return single_instance;
     }
 
-    // Constructor
     // Here we will be creating private constructor
     // restricted to this class itself
     private Library() {
